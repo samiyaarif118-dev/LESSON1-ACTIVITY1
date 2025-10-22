@@ -1,0 +1,12 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>replit</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<h1>html links</h1>
+<p>let's get into the world of <a href="http://www.codingal.com/">coding.</a></p>
+</body>
+</html>
