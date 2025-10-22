@@ -1,0 +1,29 @@
+<html>  
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>replit</title>
+<lint href="style.css" rep="stylesheet" type="text/css" />
+</head>
+<body>
+<b>welcome to codingal..let's get started with coding</b>
+<br>
+
+<strong>welcome to codingal..let's get started with coding</strong><br>
+
+<i>welcome to codingal.. let's gat started with coding</i><br>
+
+<em>welcome to codingal..let's get started with coding</em><br> 
+
+<mark>welcome to codingal..let's get started with coding</mark><br>
+
+<small>welcome to codingal..let's get started with coding</small><br>
+
+<del>welcome to codingal..let's get started with coding</del><br>
+
+welcome to <sup>codingal</sup>.let's get started with <sub>coding</sub><br>
+</body>
+</html>
+
+
+
