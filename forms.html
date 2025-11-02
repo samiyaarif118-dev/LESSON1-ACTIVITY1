@@ -1,0 +1,73 @@
+<html> 
+    <head>
+<title>forms</title> 
+</head> 
+<body>
+    <forms>
+        <fieldset>
+            <legend>personal detail forms</legend> 
+            <label>Name</label><br>
+            <input type="text" id ="name"><br><br>
+            <label>Email Id</label><br>
+            <input type="text" id = "email"><br><br>
+            <label>Contact Number</label><br>
+            <input type "password" id ="contact"><br><br>
+            <label>Gender</label><br>
+            <input type="radio" id="female" name="gender" value="female">Female<br> 
+            <input type="radio" id="male" name="gender" value="male">Male<br><br> 
+            <Label>Favourite City</Label><br> 
+            <input type="radio" id="city" value="new delhi">New Delhi<br> 
+            <input type="radio" id="city" value="Mumbai">Mumbai<br><br> 
+            <label>Birthday</label><br> 
+            <input type="date" id="birthday" name="birthday"><br><br>
+            <input type="submit"> 
+
+        
+    
+    <legend><b>Enter your Marks</b></legend>
+    <form action="/action_page.php" oninput="x.value=(parseInt(m1.value)+parseInt(m2.value)+parseInt(m3.value))/3">
+
+        <label>Name</label><br>
+        <input type="text" id="name"><br><br>
+
+        <label>Enter Marks</label><br>
+        <select name="Subject" id="subject">
+            <option value="Maths">Maths</option>
+            <option value="English">English</option>
+            <option value="Science">Science</option>
+        </select>
+
+        <input type="number" id="m1" name="m1"><br><br>
+
+        <select name="Subject2" id="subject2">
+            <option value="Maths">Maths</option>
+            <option value="English">English</option>
+            <option value="Science">Science</option>
+        </select>
+
+        <input type="number" id="m2" name="m2"><br><br>
+
+        <select name="Subject3" id="subject3">
+            <option value="Maths">Maths</option>
+            <option value="English">English</option>
+            <option value="Science">Science</option>
+        </select>
+
+        <input type="number" id="m3" name="m3"><br><br>
+
+        Average: <output name="x" for="m1 m2 m3"></output>
+
+    </form>
+</fieldset>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
