@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>Sum of Arguments</title>
+</head>
+
+<body>
+
+    <p>Finding the largest number by argument object</p>
+    <p id="result"></p>
+
+    <script>
+        function findmax() {
+            var max = arguments[0];
+            for (var i = 1; i < arguments.length; i++) {
+                if (arguments[i] > max) {
+                    max = arguments[i];
+                }
+            }
+            return max;
+        }
+
+        function sumOfArguments() {
+            var total = 0;
+            for (var i = 0; i < arguments.length; i++) {
+                total += arguments[i];
+            }
+            return total;
+        }
+
+        let angle = 30;
+        let rad = angle * (Math.PI / 180);
+
+        document.getElementById("result").innerHTML =
+            "Max value: " + findmax(4, 5, 6) + "<br>" +
+            "Sum: " + sumOfArguments(12, 33, 67, 463) + "<br>" +
+            "sin(30): " + Math.sin(rad).toFixed(2) + "<br>" +
+            "cos(30): " + Math.cos(rad).toFixed(2) + "<br>" +
+            "tan(30): " + Math.tan(rad).toFixed(2);
+    </script>
+
+</body>
+
+</html>
