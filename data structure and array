@@ -1,0 +1,33 @@
+<html>
+
+<body>
+    <h2>JavaScript Object And Properties</h2>
+    <P>THERE ARE TWO DIFFERENT WAY TO ACCESS OBJECT PROPERTIES</P>
+    <p>you can use .property or ["property"]</p>
+    <p id="demo"></p>
+    <script>
+        var person = {
+            firstName: "Amna",
+            AGE: 17,
+        };
+        document.getElementById("demo").innerHTML = person.firstName + " is " + person.AGE + "years old";
+    </script>
+    <h2>JavaScript Array Methods</h2>
+    <h2>join() and pop()</h2>
+    <p>The join()method joins array element into a string and the pop()method removes the last element from an array</p>
+    <p id="my join"></p>
+    <p id="my first pop"></p>
+    <p id="my second pop"></p>
+    <script>
+        var plant = ["tree", "flower", "stem", "leave"];
+        document.getElementById("my join").innerHTML = plant.join(" + ");
+
+        var plantPop = ["tree", "flower", "stem", "leave"];
+        var firstPop = plant.pop();
+        document.getElementById("my first pop").innerHTML = "First pop: " + firstPop;
+    var secondPop = plantPop.pop();
+    document.getElementById("my second pop").innerHTML = "Second pop: " + secondPop;
+    </script>
+</body>
+
+</html>
