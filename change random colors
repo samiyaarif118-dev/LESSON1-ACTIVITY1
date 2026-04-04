@@ -1,1 +1,16 @@
+<button onclick="changeColor()">
+  Click me!
+</button>
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
 
+function changeColor() {
+  let r = getRandomInt(256);
+  let g = getRandomInt(256);
+  let b = getRandomInt(256);
+
+  var bgcolor = "rgb(" + r + "," + g + "," + b + ")";
+
+  document.body.style.background = bgcolor;
+}
