@@ -1,1 +1,29 @@
+<h2>Enter your task here</h2>
+<form id="myForm">
+    <input id="myInput" type="text">
+    <button>Enter</button>
+</form>
+
+<h4>Activity List</h4>
+<ul id="myItem"></ul>
+var myForm = document.getElementById("myForm");
+var myInput = document.getElementById("myInput");
+var myItem = document.getElementById("myItem");
+
+myForm.addEventListener("submit", function(event){
+    event.preventDefault();
+    createItem(myInput.value)
+})
+
+function createItem(inputItems){
+    var items = `<li>${inputItems}
+    <button onclick="deleteElement(this)">Delete</button> </li>`
+    myItem.insertAdjacentHTML("beforeend", items)
+    myInput.value = ""
+    myInput.focus()
+}
+
+function deleteElement(ElementToDelete){
+    ElementToDelete.parentElement.remove()
+}
 
