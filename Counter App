@@ -1,1 +1,45 @@
+<html>
+<head>
+  <title>Counter App</title>
+</head>
+<body>
 
+<div class="wrapper">
+  <h1>Counter</h1>
+  <h2 id="count">00</h2>
+  <button id="increase">increase</button>
+  <button id="decrease">decrease</button>
+  <button id="reset">Reset</button>
+</div>
+
+</body>
+</html>
+var value = 0;
+
+const display = document.getElementById("count");
+const increase = document.getElementById("increase");
+const decrease = document.getElementById("decrease");
+const reset = document.getElementById("reset");
+
+increase.onclick = function () {
+  count++;
+  updateDisplay();
+};
+
+decrease.onclick = function () {
+  count--;
+  updateDisplay();
+};
+
+reset.onclick = function () {
+  count = 0;
+  updateDisplay();
+};
+
+function updateDisplay() {
+  if (count < 10 & count >= 0) {
+    display.innerHTML = "0" + count;
+  } else {
+    display.innerHTML = count;
+  }
+}
