@@ -1,1 +1,41 @@
+<html>
+  <head>
+    <title>Capstone </title>
+  </head>
+  <body>
+    <div class="topnav">
+      <a class="active" href="#home">Home </a>
+      <a href="#">  About_Us  </a>
+      <a href="#">  Gallery   </a>
+      <a href="#">Contact_Us</a>
+    </div>
+  </body>
+</html>
+      body {
+  margin : 0;
+  font-family : Arial , Helvetica , Sans-Serif ;
+}
+.topnav {
+  over flow : hidden;
+  background color : #333;
+}
+.topnav a {
+  float : left;
+  color : #1affa3;
+  text-align : center;
+  padding : 14px , 16px;
+  text-decoration : none;
+  font-size : 17px;
+ 
+}
+.topnav a:hover {
+  background-color : #add;
+  color : black;
+}
+.topnav a:active {
+  background-color : #ffe06;
+  color : black;
+}
+
+
 
