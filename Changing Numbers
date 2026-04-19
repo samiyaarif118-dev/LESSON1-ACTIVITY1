@@ -1,1 +1,47 @@
+<html>
+<head>
+  <title>Changing Numbers</title>
+</head>
+<body>
+  <div>Click the number</div>
+  <div id="number">1</div>
+</body>
+</html>
+body {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+#number {
+  font-size: 100px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+var stopped = false;
+var t;
+var number;
+function change() {
+  var random = Math.floor(Math.random() * 10) + 1;
+  number.innerHTML = random;
+}
+function stopStart() {
+  var current = parseInt(number.innerHTML);
+
+  if (!stopped) {
+    clearInterval(t);
+    stopped = true;
+    if (current % 2 === 0) {
+      stopped = false;
+      t = setInterval(change, 100);
+    }
+
+  } else {
+    stopped = false;
+    t = setInterval(change, 100);
+  }
+}
+window.onload = function() {
+  number = document.getElementById("number");
+  number.onclick = stopStart;
+  t = setInterval(change, 100);
+};
