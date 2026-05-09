@@ -1,0 +1,135 @@
+/* Reset Default Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+    color: orange;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 15px 30px;
+}
+
+/* Logo */
+.logo {
+    color: red;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+/* Navigation Link Style */
+.nav-links a {
+    color: pink;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+    color: purple;
+}
+
+/* Hero Section */
+.hero {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, green, yellow);
+    padding: 20px;
+}
+
+/* Hero Heading */
+.hero-content h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+/* Hero Paragraph */
+.hero-content p {
+    font-size: 22px;
+    color: white;
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Gallery Heading */
+.gallery h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+/* Gallery Container */
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Gallery Images */
+.gallery-item img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover Effect on Images */
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media(max-width:768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .gallery-item img {
+        width: 90%;
+        height: auto;
+    }
+}
