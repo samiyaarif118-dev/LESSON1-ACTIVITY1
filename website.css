@@ -1,45 +1,27 @@
-/* Reset Default Styling */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body Styling */
-body {
-    font-family: Arial, sans-serif;
-    background-color: whitesmoke;
-    color: orange;
-}
-
-/* Navbar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    padding: 15px 30px;
-}
-
 /* Logo */
 .logo {
-    color: red;
+    color: purple;
     font-size: 28px;
     font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(184, 219, 78, 0.813);
+
 }
 
 /* Navigation Links */
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 60px;
+    text-align: center;
+    background-color: black;
 }
 
 /* Navigation Link Style */
 .nav-links a {
     color: pink;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     transition: 0.3s;
 }
 
@@ -50,19 +32,18 @@ body {
 
 /* Hero Section */
 .hero {
-    height: 90vh;
+    height: 30rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: center;  
     text-align: center;
-    background: linear-gradient(to right, green, yellow);
+    background: lightgreen;
     padding: 20px;
 }
 
 /* Hero Heading */
 .hero-content h1 {
     font-size: 55px;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
     color: white;
 }
 
@@ -70,19 +51,19 @@ body {
 .hero-content p {
     font-size: 22px;
     color: white;
+    margin-bottom: 25px;
 }
 
 /* Gallery Section */
 .gallery {
-    padding: 60px 20px;
+    padding: 60px 10px;
     text-align: center;
+    text-align: center;
+    color: green;
+    background-color:bisque
+    
 }
 
-/* Gallery Heading */
-.gallery h1 {
-    font-size: 40px;
-    margin-bottom: 30px;
-}
 
 /* Gallery Container */
 .gallery-container {
@@ -90,6 +71,8 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+   
+    
 }
 
 /* Gallery Images */
@@ -99,7 +82,9 @@ body {
     object-fit: cover;
     border-radius: 12px;
     transition: 0.3s;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(255, 165, 0, 0.54);
+    height: 200px;
+    width: 400px;
 }
 
 /* Hover Effect on Images */
@@ -107,29 +92,49 @@ body {
     transform: scale(1.05);
 }
 
-/* Responsive Design */
-@media(max-width:768px) {
+.contact {
+    background-color: lightblue;
+    padding: 50px 20px;
+    text-align: center;
 
-    .navbar {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hero-content h1 {
-        font-size: 38px;
-    }
-
-    .hero-content p {
-        font-size: 18px;
-    }
-
-    .gallery-item img {
-        width: 90%;
-        height: auto;
-    }
+}
+.contact h1 {
+    font-size: 40px;
+    color: darkblue;
+}
+.contact p {
+    font-size: 20px;
+    color: palevioletred;
+    text-align: center;
+    
+}
+.contact ol {
+    list-style: none;
+    padding: 10px;
+    font-size: 18px;
+    color: purple;
+    text-align: center;
+}
+.about {
+    background-color: pink;
+    padding: 50px 20px;
+    text-align: center;
+}
+.about h1 {
+    font-size: 40px;
+    color: lightskyblue;
+   
+}
+.about p {
+    font-size: 20px;
+    color: purple;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+footer {
+    background-color: rgb(229, 235, 148);
+    padding: 20px;
+    text-align: center;
+    color: rgb(238, 119, 196);
+    font-size: 18px;
 }
