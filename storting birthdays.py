@@ -1,0 +1,6 @@
+name = input("Enter your name: ")
+age = input("Enter your age: ")
+class_name = input("Enter your class: ")
+birthday = input("Enter your birthday: ")
+thing = input("Enter your favourite things: ")
+things_to_do = input("Enter the things you do on your birthday: ")
