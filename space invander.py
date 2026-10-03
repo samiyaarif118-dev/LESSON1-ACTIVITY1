@@ -7,7 +7,7 @@ player_start_x = 370
 player_start_y = 380
 enemy_start_y_min = 50
 enemy_start_x_max = 150
-enemy_speed_x = 4
+enemy_speed_x = 3
 enemy_speed_y = 10
 bullet_speed_y = 10
 collision_distance = 27
@@ -26,6 +26,9 @@ playerimg = pygame.image.load("player.png")
 playerx = player_start_x
 playery = player_start_y
 playerx_change = 0
+
+pygame.mixer.music.load("music.mp3")
+pygame.mixer.music.play(-1)
 
 enemyimg = []
 enemyx = []
@@ -102,8 +105,8 @@ while running:
         if event.type == pygame.KEYUP and event.key in [pygame.K_LEFT, pygame.K_RIGHT]:
             playerx_change = 0
 
-        playerx += playerx_change
-        playerx = max(0, min(playerx, screen_width - 64))
+    playerx += playerx_change
+    playerx = max(0, min(playerx, screen_width - 64))
 
     for i in range(num_of_enemies):
         if enemyy[i] > 340:
@@ -136,6 +139,9 @@ while running:
     player(playerx, playery)
     show_score(textx, texty)
     pygame.display.update()
+
+
+
 
 
 
